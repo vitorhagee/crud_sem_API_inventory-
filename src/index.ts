@@ -1,6 +1,6 @@
 import * as readline from "readline"
 
-const r1 = readline.createInterface({
+const rl = readline.createInterface({
     input:process.stdin,
     output:process.stdout
 })
@@ -11,27 +11,50 @@ function mostrarMenu(): void{
     console.log("2 - Adcionar ao inventario");
     console.log("3 - Remover item do inventario");
     console.log("4 - Sair")
-    r1.question("\nescolha uma opção:", (resposta) => { navegarMenu(resposta)})
+    rl.question("\nescolha uma opção:", (resposta) => { navegarMenu(resposta)})
 }
 
 function navegarMenu(entrada:string){
     switch(entrada){
         case "1":
-            console.log("inventario")
+            verInventario()
             break;
         case "2":
-            console.log("adicionar item")
+            adicionarItem()
             break;
         case "3":
-            console.log("remover item")
+            removerItem()
             break;
         case "4":
-            console.log("sair");
+            sair()
             break
         default:
             console.log("\n opção invalida")
             mostrarMenu()
     }
+}
+
+function verInventario(): void {
+  console.log("\n Inventário vazio")
+
+  mostrarMenu()
+}
+
+function adicionarItem(): void {
+  console.log("\n Adicionar item")
+
+  mostrarMenu()
+}
+
+function removerItem(): void {
+  console.log("\n Remover item")
+
+  mostrarMenu()
+}
+
+function sair(): void {
+  console.log("\n Saindo do sistema...")
+  rl.close()
 }
 
 mostrarMenu();
