@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Caixa de suplementos",
+    "classe": "Geral",
+    "tipo": "Suporte",
+    "valor": 15,
+    "peso": 10
+  },
+  {
+    "id": 2,
+    "nome": "Capacete grande",
+    "classe": "geral",
+    "tipo": "capacete",
+    "valor": 160,
+    "peso": 35
+  },
+  {
+    "id": 3,
+    "nome": "Camisa simples",
+    "classe": "geral",
+    "tipo": "Chest",
+    "valor": 12,
+    "peso": 5
+  }
+]
